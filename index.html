@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam & Eva</title>
+</head>
+<body>
+<div>
+    <form action="">
+        <fieldset>
+            <legend>Adam Information</legend>
+            <table>
+                <tr>
+                    <th style="font-weight: bold;">Property</th>
+                    <th style="font-weight: bold">Index</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="AdamName" readonly></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="text" id="AdamGender" readonly></td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td><input type="number" min="0" id="AdamWeight" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="AdamGreeting.value =adam.greeting();">Greeting</button>
+                    </td>
+                    <td><input type="text" id="AdamGreeting" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="adam.checkApple()">Check Apple</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="adam.eatApple()">Eat Apple</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="adam.getGender()">Check Partner's Gender</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="adam.getWeight()">Check Partner's Weight</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Eva Information</legend>
+            <table>
+                <tr>
+                    <th style="font-weight: bold;">Property</th>
+                    <th style="font-weight: bold">Index</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="EvaName" readonly></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="text" id="EvaGender" readonly></td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td><input type="number" min="0" id="EvaWeight" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="EvaGreeting.value =eva.greeting();">Greeting</button>
+                    </td>
+                    <td><input type="text" id="EvaGreeting" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="eva.checkApple()">Check Apple</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="eva.eatApple()">Eat Apple</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="eva.getGender()">Check Partner's Gender</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="eva.getWeight()">Check Partner's Weight</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
+<div>
+    <form action="">
+        <fieldset>
+            <legend>Apple Information</legend>
+            <table>
+                <tr>
+                    <td><h1>Current Weight: </h1></td>
+                    <td><h1 id="AppleWeight"></h1></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
